@@ -1,6 +1,6 @@
 # 20Time-ICS4U
 
-## Topic: System Verilog
+### Topic: System Verilog
 
 #### Week 1 (Sep 18 - 22)
 
