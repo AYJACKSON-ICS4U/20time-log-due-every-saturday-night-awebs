@@ -1,6 +1,7 @@
 # 20Time-ICS4U
 
-### Topic: System Verilog
+### Topic
+**Kashyap and I** will be creating a file converting program for the school. It will convert **.docx files to .xls files** (Google Docs downloaded files to spreadsheets). The program will be created in **Java** using the Netbeans IDE.
 
 #### Week 1 (Sep 18 - 22)
 
