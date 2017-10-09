@@ -5,9 +5,15 @@
 
 #### Week 1 (Sep 18 - 22)
 
+Started looking into my previous topic early in the week (learning system verilog), until the opportunity to create a converter for the school came up later in the week. The rest of the week was trying to understand what the script for the school was supposed to accomplish.
+
 #### Week 2 (Sep 25 - 29)
 
+Received more information about our scripts purpose and what language to write it in. We learned we should write the script in Java and will be converting a documents downloaded from google docs into a spreadsheet file.
+
 #### Week 3 (Oct 1 - 6)
+
+Created a simple inferface in Netbeans that allows a user to import a file, view the file in a text box, click a convertion button (does not do anything) and a textbox to output errors and status of the program during runtime. 
 
 #### Week 4 (Oct 9 - 13)
 
