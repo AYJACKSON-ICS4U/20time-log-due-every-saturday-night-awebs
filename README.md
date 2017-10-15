@@ -1,7 +1,7 @@
 # 20Time-ICS4U
 
 ### Topic
-**Kashyap and I** will be creating a file converting program for the school. It will convert **.docx files to .xls files** (Google Docs downloaded files to spreadsheets). The program will be created in **Java** using the Netbeans IDE.
+**Kashyap and I** will be creating a file generation program for the school. It will generate a **.xls file from an .xls file**. The program will be created in **Java** using the Netbeans IDE.
 
 #### Week 1 (Sep 18 - 22)
 
@@ -13,9 +13,11 @@ Received more information about our scripts purpose and what language to write i
 
 #### Week 3 (Oct 1 - 6)
 
-Created a simple inferface in Netbeans that allows a user to import a file, view the file in a text box, click a convertion button (does not do anything) and a textbox to output errors and status of the program during runtime. 
+Created a simple GUI in Netbeans that allows a user to import a file, view the file in a text box, click a convertion button (does not do anything) and a textbox to output errors and status of the program during runtime. 
 
 #### Week 4 (Oct 9 - 13)
+
+Had a meeting with guidence to learn more specifically what we will be doing and learned will be re-formating and adding data to an existing spreadsheet file. Made some changes to the GUI after learning we will be generating .xls from .xls. In addition, I changed the code used last week to import a .xls file using the apache poi external library (also spend the week learning this library).
 
 #### Week 5 (Oct 12 - Mar 18)
 
