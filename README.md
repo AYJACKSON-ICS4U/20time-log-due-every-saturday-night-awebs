@@ -11,7 +11,7 @@ Started looking into my previous topic early in the week (learning system verilo
 
 Received more information about our scripts purpose and what language to write it in. We learned we should write the script in Java and will be converting a documents downloaded from google docs into a spreadsheet file.
 
-#### Week 3 (Oct 1 - 6)
+#### Week 3 (Oct 2 - 6)
 
 Created a simple GUI in Netbeans that allows a user to import a file, view the file in a text box, click a convertion button (does not do anything) and a textbox to output errors and status of the program during runtime. 
 
@@ -23,18 +23,6 @@ Had a meeting with guidence to learn more specifically what we will be doing and
 
 ![Second gui picture](https://i.imgur.com/0h85DG8.png)
 
-#### Week 5 (Oct 12 - Mar 18)
+#### Week 5 (Oct 16 - Oct 20)
 
-#### Week 6 (Mar 19 - Mar 25)
-
-#### Week 7 (Mar 26 - Apr 1)
-
-#### Week 8 (Apr 2 - Apr 8)
-
-#### Week 9 (Apr 9 - Apr 15)
-
-#### Week 10 (Apr 16 - Apr 22)
-
-#### Week 11 (Apr 23 - Apr 29)
-
-#### Week 12 (Apr 30 - May 6)
+Refamilarized myself with [java concepts](https://docs.oracle.com/javase/tutorial/java/concepts/index.html) (subclasses, superclasses, interfaces etc). Continued on Apache Poi library learning. Overall a slow week from other projects and no class time.
