@@ -15,7 +15,7 @@ Received more information about our scripts purpose and what language to write i
 
 Created a simple GUI in Netbeans that allows a user to import a file, view the file in a text box, click a convertion button (does not do anything) and a textbox to output errors and status of the program during runtime. 
 
-![first gui picture](https://imgur.com/a/gVVH0)
+![first gui picture](https://i.imgur.com/etpN1hj.png)
 
 #### Week 4 (Oct 9 - 13)
 
