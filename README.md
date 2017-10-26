@@ -21,6 +21,8 @@ Created a simple GUI in Netbeans that allows a user to import a file, view the f
 
 Had a meeting with guidence to learn more specifically what we will be doing and learned will be re-formating and adding data to an existing spreadsheet file. Made some changes to the GUI after learning we will be generating .xls from .xls. In addition, I changed the code used last week to import a .xls file using the apache poi external library (also spend the week learning this library).
 
+![Second gui picture](https://i.imgur.com/0h85DG8.png)
+
 #### Week 5 (Oct 12 - Mar 18)
 
 #### Week 6 (Mar 19 - Mar 25)
