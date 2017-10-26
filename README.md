@@ -15,6 +15,8 @@ Received more information about our scripts purpose and what language to write i
 
 Created a simple GUI in Netbeans that allows a user to import a file, view the file in a text box, click a convertion button (does not do anything) and a textbox to output errors and status of the program during runtime. 
 
+![first gui picture](https://imgur.com/a/gVVH0)
+
 #### Week 4 (Oct 9 - 13)
 
 Had a meeting with guidence to learn more specifically what we will be doing and learned will be re-formating and adding data to an existing spreadsheet file. Made some changes to the GUI after learning we will be generating .xls from .xls. In addition, I changed the code used last week to import a .xls file using the apache poi external library (also spend the week learning this library).
