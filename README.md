@@ -26,3 +26,9 @@ Had a meeting with guidence to learn more specifically what we will be doing and
 #### Week 5 (Oct 16 - Oct 20)
 
 Refamilarized myself with [java concepts](https://docs.oracle.com/javase/tutorial/java/concepts/index.html) (subclasses, superclasses, interfaces etc). Continued on Apache Poi library learning. Overall a slow week from other projects and no class time.
+
+#### Week 6 (Oct 23 - 27)
+
+Made progress towards GUI interface. Action buttons will be on the right side of the screen with an optional text status for the button beside it. This makes the inferface simple, easy to understand and work with. Added a **current file open text** beside the open a file button. Program status will now correctly display when there is a problem opening a file, when a file has been opened and when the file chooser has been closed.
+
+![Third gui picture with improved cleaner design](https://imgur.com/Zs4OtJh.png)
