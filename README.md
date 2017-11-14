@@ -35,4 +35,8 @@ Made progress towards GUI interface. Action buttons will be on the right side of
 
 #### Week 7 (Oct 30 - Nov 3)
 
-This was a slower week. Made progress towards leaning the Apache POI library to start coding the generator next week. I plan on opening the file through the Apache POI library and making edits towards the file next week and outputting a new file. These changes will not be the actual changes but small changes that will be altered for the final project (this is so I can go through using all the necessary steps).
+Made progress towards leaning the Apache POI library to start coding the generator next week. I plan on opening the file through the Apache POI library and making edits towards the file next week and outputting a new file. These changes will not be the actual changes but small changes that will be altered for the final project (this is so I can go through using all the necessary steps).
+
+#### Week 8 (Nov 6 - 10)
+
+Did not accomplish the goal set last week. Had other project in computer science and other classes, so I had no time to complete the goal correctly. 
