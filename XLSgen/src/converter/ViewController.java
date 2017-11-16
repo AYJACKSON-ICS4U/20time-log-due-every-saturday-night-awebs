@@ -5,11 +5,15 @@
  */
 package converter;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import javax.swing.JFileChooser;
 import org.apache.poi.hssf.usermodel.HSSFSheet;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import java.lang.String;
+import java.util.Arrays;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -39,6 +43,8 @@ public class ViewController extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
         openFileButton = new javax.swing.JButton();
+        fileOpenText = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setMaximumSize(new java.awt.Dimension(500, 500));
@@ -50,13 +56,14 @@ public class ViewController extends javax.swing.JFrame {
         infoTextArea.setRows(5);
         jScrollPane1.setViewportView(infoTextArea);
 
-        jLabel1.setFont(new java.awt.Font("Cambria Math", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Broadway", 0, 36)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setText("Program Status");
 
-        jButton1.setFont(new java.awt.Font("Cambria Math", 0, 18)); // NOI18N
+        jButton1.setFont(new java.awt.Font("Broadway", 0, 13)); // NOI18N
         jButton1.setText("Convert");
 
+        openFileButton.setFont(new java.awt.Font("Broadway", 0, 13)); // NOI18N
         openFileButton.setText("Open A File");
         openFileButton.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -64,39 +71,59 @@ public class ViewController extends javax.swing.JFrame {
             }
         });
 
+        fileOpenText.setFont(new java.awt.Font("Broadway", 0, 18)); // NOI18N
+        fileOpenText.setForeground(new java.awt.Color(0, 0, 255));
+        fileOpenText.setText("No file open");
+
+        jLabel2.setFont(new java.awt.Font("Broadway", 0, 36)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
+        jLabel2.setText("Program Status");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jScrollPane1))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addContainerGap(133, Short.MAX_VALUE)
-                        .addComponent(jLabel1)
-                        .addGap(117, 117, 117)))
-                .addContainerGap())
+                .addGap(79, 79, 79)
+                .addComponent(jLabel1)
+                .addContainerGap(115, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(125, 125, 125)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(openFileButton, javax.swing.GroupLayout.DEFAULT_SIZE, 250, Short.MAX_VALUE))
-                .addGap(125, 125, 125))
+                .addContainerGap()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jScrollPane1)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(openFileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
+                        .addComponent(fileOpenText, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(93, 93, 93)
+                    .addComponent(jLabel2)
+                    .addContainerGap(101, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(26, 26, 26)
-                .addComponent(openFileButton, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(18, 18, 18)
-                .addComponent(jButton1)
-                .addGap(137, 137, 137)
+                .addGap(9, 9, 9)
                 .addComponent(jLabel1)
-                .addGap(37, 37, 37)
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(openFileButton, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(fileOpenText, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 160, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                    .addContainerGap(279, Short.MAX_VALUE)
+                    .addComponent(jLabel2)
+                    .addGap(190, 190, 190)))
         );
 
         pack();
@@ -106,15 +133,21 @@ public class ViewController extends javax.swing.JFrame {
         int returnVal = fileChooser.showOpenDialog(this);
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             try {
+                String fileName = "" + fileChooser.getSelectedFile();
+                String[] fileNames = fileName.split(Pattern.quote("\\"));
+                
                 FileInputStream fis = new FileInputStream(fileChooser.getSelectedFile());
-                HSSFWorkbook wb = new HSSFWorkbook(fis);
-                HSSFSheet sheet = wb.getSheetAt(0);
+
+                // HSSFWorkbook wb = new HSSFWorkbook(fis);
+                fileOpenText.setText(fileNames[fileNames.length - 1]);
+                infoTextArea.setText("\nSuccessfully opened file at: " + fileName);
+
             } catch (IOException ex) {
-                infoTextArea.setText(infoTextArea.getText() + "\nthere was a problem accessing the file at " + fileChooser.getSelectedFile());
+                infoTextArea.setText(infoTextArea.getText() + "\nThere was a problem accessing the file at " + fileChooser.getSelectedFile());
             }
         } else {
-            infoTextArea.setText(infoTextArea.getText() + "\nthe user has cancelled choosing a file.");
-        }
+            infoTextArea.setText(infoTextArea.getText() + "\nthe user has cancelled choosing a new file");
+        } 
     }//GEN-LAST:event_openFileButtonActionPerformed
 
     /**
@@ -154,9 +187,11 @@ public class ViewController extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JFileChooser fileChooser;
+    private javax.swing.JLabel fileOpenText;
     private javax.swing.JTextArea infoTextArea;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JButton openFileButton;
     // End of variables declaration//GEN-END:variables
