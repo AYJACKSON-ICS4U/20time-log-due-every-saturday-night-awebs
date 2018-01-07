@@ -14,6 +14,9 @@ import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import java.lang.String;
 import java.util.Arrays;
 import java.util.regex.Pattern;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.FormulaEvaluator;
+import org.apache.poi.ss.usermodel.Row;
 
 /**
  *
@@ -57,7 +60,6 @@ public class ViewController extends javax.swing.JFrame {
         jScrollPane1.setViewportView(infoTextArea);
 
         jLabel1.setFont(new java.awt.Font("Broadway", 0, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 0, 255));
         jLabel1.setText("Program Status");
 
         jButton1.setFont(new java.awt.Font("Broadway", 0, 13)); // NOI18N
@@ -72,11 +74,9 @@ public class ViewController extends javax.swing.JFrame {
         });
 
         fileOpenText.setFont(new java.awt.Font("Broadway", 0, 18)); // NOI18N
-        fileOpenText.setForeground(new java.awt.Color(0, 0, 255));
         fileOpenText.setText("No file open");
 
         jLabel2.setFont(new java.awt.Font("Broadway", 0, 36)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 0, 255));
         jLabel2.setText("Program Status");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -130,25 +130,45 @@ public class ViewController extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void openFileButtonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_openFileButtonActionPerformed
+        boolean opened = false;
+
         int returnVal = fileChooser.showOpenDialog(this);
+        FileInputStream fis = null;
+
         if (returnVal == JFileChooser.APPROVE_OPTION) {
+            
             try {
                 String fileName = "" + fileChooser.getSelectedFile();
                 String[] fileNames = fileName.split(Pattern.quote("\\"));
                 
-                FileInputStream fis = new FileInputStream(fileChooser.getSelectedFile());
-
-                // HSSFWorkbook wb = new HSSFWorkbook(fis);
+                fis = new FileInputStream(fileChooser.getSelectedFile());
+                
                 fileOpenText.setText(fileNames[fileNames.length - 1]);
                 infoTextArea.setText("\nSuccessfully opened file at: " + fileName);
 
+                opened = true;
             } catch (IOException ex) {
                 infoTextArea.setText(infoTextArea.getText() + "\nThere was a problem accessing the file at " + fileChooser.getSelectedFile());
             }
+
         } else {
-            infoTextArea.setText(infoTextArea.getText() + "\nthe user has cancelled choosing a new file");
+            infoTextArea.setText(infoTextArea.getText() + "\nThe user has cancelled choosing a new file");
         } 
+        
+        if (opened == true) {
+            try {
+                generateNewFile(fis);
+            } catch (IOException ex) {
+                infoTextArea.setText(infoTextArea.getText() + "\nThere was a problem generating the new file. Make sure the file is a spreadsheet file.");
+            }
+            
+        }
     }//GEN-LAST:event_openFileButtonActionPerformed
+    
+    private void generateNewFile(FileInputStream fis) throws IOException{
+        HSSFWorkbook wb = new HSSFWorkbook(fis);
+        System.out.println(wb);
+    }
 
     /**
      * @param args the command line arguments

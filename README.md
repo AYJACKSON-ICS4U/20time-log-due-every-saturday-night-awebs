@@ -13,7 +13,7 @@ Received more information about our scripts purpose and what language to write i
 
 #### Week 3 (Oct 2 - 6)
 
-Created a simple GUI in Netbeans that allows a user to import a file, view the file in a text box, click a convertion button (does not do anything) and a textbox to output errors and status of the program during runtime. 
+Created a simple GUI in Netbeans that allows a user to import a file, view the file in a text box, click a convertion button (does not do anything) and a textbox to output errors and status of the program during runtime.
 
 ![first gui picture](https://i.imgur.com/etpN1hj.png)
 
@@ -39,4 +39,8 @@ Made progress towards leaning the Apache POI library to start coding the generat
 
 #### Week 8 (Nov 6 - 10)
 
-Did not accomplish the goal set last week. Had other project in computer science and other classes, so I had no time to complete the goal correctly. 
+Did not accomplish the goal set last week. Had other project in computer science and other classes, so I had no time to complete the goal correctly.
+
+#### Week 9 (Nov 13 - 17)
+
+Added program status: "Successfully opened file at: ..." and "There was a problem generating the new file. Make sure of file is a spreadsheet file."
