@@ -25,7 +25,7 @@ Had a meeting with guidence to learn more specifically what we will be doing and
 
 #### Week 5 (Oct 16 - Oct 20)
 
-Refamilarized myself with [java concepts](https://docs.oracle.com/javase/tutorial/java/concepts/index.html) (subclasses, superclasses, interfaces etc). Continued on Apache Poi library learning. Overall a slow week from other projects and no class time.
+Refamilarized myself with [_java concepts_](https://docs.oracle.com/javase/tutorial/java/concepts/index.html) (subclasses, superclasses, interfaces etc). Continued on Apache Poi library learning. Overall a slow week from other projects and no class time.
 
 #### Week 6 (Oct 23 - 27)
 
@@ -51,4 +51,8 @@ Struggled to get anything in the apache poi working properly, this project is go
 
 #### Week 11 (Nov 27 - Dec 1)
 
-I have not changed by project topic yet, however I have started learning the Java language in depth because it will allow me to complete this project. The source I am using is [**Oracle**](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
+I have not changed by project topic yet, however I have started learning the Java language in depth because it will allow me to complete this project. The source I am using is [_Oracle_](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
+
+## Week 12 (Dec 4 - 8)
+
+Finished [_"What Is An Object"_](https://docs.oracle.com/javase/tutorial/java/concepts/object.html) and [_"What Is A Class"_](https://docs.oracle.com/javase/tutorial/java/concepts/class.html). I am leaning a lot and now realize there is a massive difference between javascript and java.
