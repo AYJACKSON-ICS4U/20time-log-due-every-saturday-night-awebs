@@ -1,6 +1,12 @@
 # 20Time-ICS4U
 
 ## Topic
+**New Topic**
+
+I will learn the java programming language and the NetBeans IDE.
+
+**Old Topic**
+
 **Kashyap and I** will be creating a file generation program for the school. It will generate a **.xls file from an .xls file**. The program will be created in **Java** using the Netbeans IDE.
 
 ### Week 1 (Sep 18 - 22)
