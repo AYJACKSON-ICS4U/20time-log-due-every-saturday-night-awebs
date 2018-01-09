@@ -43,4 +43,12 @@ Did not accomplish the goal set last week. Had other project in computer science
 
 #### Week 9 (Nov 13 - 17)
 
-Added program status: "Successfully opened file at: ..." and "There was a problem generating the new file. Make sure of file is a spreadsheet file."
+Added program status: "Successfully opened file at: ..." and "There was a problem generating the new file. Make sure of file is a spreadsheet file".
+
+#### Week 10 (Nov 20 - 24)
+
+Struggled to get anything in the apache poi working properly, this project is going to be more difficult to complete than I thought. I am considering **changing to learning Java and the Netbeans IDE** because my knowledge of the language is hurting my progress. It would be more productive to learn Java.
+
+#### Week 11 (Nov 27 - Dec 1)
+
+I have not changed by project topic yet, however I have started learning the Java language in depth because it will allow me to complete this project. The source I am using is [**Oracle**](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)

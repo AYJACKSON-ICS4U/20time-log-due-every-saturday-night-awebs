@@ -17,6 +17,7 @@ import java.util.regex.Pattern;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.FormulaEvaluator;
 import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 /**
  *
@@ -133,16 +134,19 @@ public class ViewController extends javax.swing.JFrame {
         boolean opened = false;
 
         int returnVal = fileChooser.showOpenDialog(this);
-        FileInputStream fis = null;
+        //FileInputStream fis = null;
 
         if (returnVal == JFileChooser.APPROVE_OPTION) {
             
             try {
-                String fileName = "" + fileChooser.getSelectedFile();
-                String[] fileNames = fileName.split(Pattern.quote("\\"));
+                File fileName = fileChooser.getSelectedFile();
                 
-                fis = new FileInputStream(fileChooser.getSelectedFile());
-                
+                //String[] fileNames = fileName.split(Pattern.quote("\\"));
+
+                System.out.println(fileName);
+                FileInputStream fis = new FileInputStream(fileName);
+                HSSFWorkbook wb = new HSSFWorkbook(fis);
+
                 fileOpenText.setText(fileNames[fileNames.length - 1]);
                 infoTextArea.setText("\nSuccessfully opened file at: " + fileName);
 
@@ -166,8 +170,9 @@ public class ViewController extends javax.swing.JFrame {
     }//GEN-LAST:event_openFileButtonActionPerformed
     
     private void generateNewFile(FileInputStream fis) throws IOException{
+        System.out.println(fis);
         HSSFWorkbook wb = new HSSFWorkbook(fis);
-        System.out.println(wb);
+        System.out.println("DONE");
     }
 
     /**
