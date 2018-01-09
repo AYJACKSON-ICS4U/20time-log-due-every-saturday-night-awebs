@@ -53,6 +53,14 @@ Struggled to get anything in the apache poi working properly, this project is go
 
 I have not changed by project topic yet, however I have started learning the Java language in depth because it will allow me to complete this project. The source I am using is [_Oracle_](https://docs.oracle.com/javase/tutorial/java/concepts/index.html)
 
-## Week 12 (Dec 4 - 8)
+#### Week 12 (Dec 4 - 8)
 
-Finished [_"What Is An Object"_](https://docs.oracle.com/javase/tutorial/java/concepts/object.html) and [_"What Is A Class"_](https://docs.oracle.com/javase/tutorial/java/concepts/class.html). I am leaning a lot and now realize there is a massive difference between javascript and java.
+Finished [_"What Is An Object?"_](https://docs.oracle.com/javase/tutorial/java/concepts/object.html) and [_"What Is A Class?"_](https://docs.oracle.com/javase/tutorial/java/concepts/class.html). I am leaning a lot and now realize there is a massive difference between java script and java.
+
+#### Week 13 (Dec 11 - 15)
+
+Finished [_"What Is Inheritance"_](https://docs.oracle.com/javase/tutorial/java/concepts/inheritance.html) and [_"What Is An Interface"_](https://docs.oracle.com/javase/tutorial/java/concepts/interface.html)
+
+#### Week 14 (Dec 18 - 22)
+
+Finished [_"What Is A Package"_](https://docs.oracle.com/javase/tutorial/java/concepts/package.html). I have decided to switch my 20 time to learning the java language and NetBeans IDE because I do not have time to figure out the program for guidance. I will write a rock, paper, scissors program to put these new skills to the test.
