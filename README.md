@@ -70,3 +70,19 @@ Finished [_"What Is Inheritance"_](https://docs.oracle.com/javase/tutorial/java/
 ### Week 14 (Dec 18 - 22)
 
 Finished [_"What Is A Package"_](https://docs.oracle.com/javase/tutorial/java/concepts/package.html). I have decided to switch my 20 time to learning the java language and NetBeans IDE because I do not have time to figure out the program for guidance. I will write a rock, paper, scissors program to put these new skills to the test.
+
+### Week 15 (Dec 25 - 29)
+
+Did not accomplish anything this week because of Christmas.
+
+### Week 16 (Jan 1 - 5)
+
+Explored NetBeans and learned the basics.
+
+### Week 17 (Jan 8 - 12)
+
+Worked on the presentation and script.
+
+### Week 18 ( Jan 15 - 19)
+
+Polished and presented my presentation.
